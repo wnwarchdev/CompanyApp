@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon server.js",
-    "test": "mocha --watch \"./{,!(node_modules)/**/}*.test.js\""
+    "test": "mocha --watch \"./{,!(node_modules)/**/}*.test.js\"",
+    "test:watch": "onchange \"./**/*.js\" -i -k -- yarn test"
   },
   "dependencies": {
     "chai": "^4.2.0",
@@ -18,6 +19,7 @@
     "mongoose": "5.7.1",
     "nodemon": "^1.19.1",
     "npm": "^6.14.7",
+    "onchange": "^7.0.2",
     "tap": "^14.10.8",
     "util.promisify": "^1.0.1"
   }
