@@ -56,9 +56,9 @@ describe('Department', () => {
         expect(savedDepartment).to.not.be.null;
       });
 
-
-
-
+      after(async () => {
+        await Department.deleteMany();
+      });
     });
 
     describe('Updating data', () => {
