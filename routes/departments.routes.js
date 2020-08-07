@@ -12,9 +12,9 @@ router.get('/departments/:id', DepartmentController.getId);
 
 router.post('/departments', DepartmentController.post);
 
-router.put('/departments', DepartmentController.put);
+router.put('/departments/:id', DepartmentController.put);
 
-router.delete('/departments', DepartmentController.delete);
+router.delete('/departments/:id', DepartmentController.delete);
 
 
 //export
